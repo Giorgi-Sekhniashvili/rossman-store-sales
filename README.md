@@ -26,3 +26,26 @@ all feature names are in [here](./data/for_training/features.json)
 
 model is lightgbm. We try to find the best hyperparameters using optuna.
 We try several hyperparameters and choose the best one at the end.
+
+## Results
+
+Best hyper parameters:
+
+```json
+{
+  num_leaves: 77,
+  learning_rate: 0.897019124796627,
+  min_child_samples: 79,
+  min_child_weight: 78.36835995132282,
+  subsample: 0.30122196311141236,
+  subsample_freq: 3,
+  colsample_bytree: 0.3047873793369096,
+  reg_alpha: 75.55574706480405,
+  reg_lambda: 24.99995435901818,
+  max_depth: 19,
+  min_split_gain: 52.58780312409352
+}
+```
+
+Best MSR: 0.7999518396713539 on validation set after running 10 trials only
+
