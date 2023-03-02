@@ -31,21 +31,21 @@ We try several hyperparameters and choose the best one at the end.
 
 Best hyper parameters:
 
-```json
-{
-  "num_leaves": 77,
-  "learning_rate": 0.897019124796627,
-  "min_child_samples": 79,
-  "min_child_weight": 78.36835995132282,
-  "subsample": 0.30122196311141236,
-  "subsample_freq": 3,
-  "colsample_bytree": 0.3047873793369096,
-  "reg_alpha": 75.55574706480405,
-  "reg_lambda": 24.99995435901818,
-  "max_depth": 19,
-  "min_split_gain": 52.58780312409352
+```python
+best_params = {
+    'num_leaves': 128,
+    'learning_rate': 0.9142244642559713,
+    'min_child_samples': 42,
+    'min_child_weight': 82.67196585530857,
+    'subsample': 0.8484409608430301,
+    'subsample_freq': 10,
+    'colsample_bytree': 0.7233264088685998,
+    'reg_alpha': 21.228348804552645,
+    'reg_lambda': 87.17459207514409,
+    'max_depth': 14,
+    'min_split_gain': 0.053099560774982534
 }
 ```
 
-Best MSR: 0.7999518396713539 on validation set after running 10 trials only
+Best MSR: 0.47350310197843565 on validation set after running 100 trials
 

@@ -71,7 +71,7 @@ def train_and_evaluate(n_trials=2):
 
 
 if __name__ == "__main__":
-    whole_study = train_and_evaluate(n_trials=2)
+    whole_study = train_and_evaluate(n_trials=100)
     print("Number of finished trials: ", len(whole_study.trials))
     print("Best hyper parameters:", whole_study.best_trial.params)
     print("Best value:", whole_study.best_value)
