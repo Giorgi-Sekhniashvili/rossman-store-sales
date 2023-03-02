@@ -49,3 +49,10 @@ best_params = {
 
 Best MSR: 0.47350310197843565 on validation set after running 100 trials
 
+## Future Ideas
+
+1. Try other models, or combination of models.
+2. Create more features for example - lagged values of the sales.
+3. We could also use different type of models for different types of stores. 
+
+
